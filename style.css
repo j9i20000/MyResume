@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.print-area {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.print-area .header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(31, 34, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-text {
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 80px;
+  font-weight: normal;
+}
+
+.header-text h1 span {
+  font-size: 20px;
+}
+
+.header-text p {
+  font-size: 24px;
+  color: lightgray;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-area {
+  width: 30%;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.left-area img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: -80px;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: .5s;
+  user-select: none;
+  filter: grayscale(100%);
+}
+
+.left-area img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+}
+
+.left-area .contact {
+  margin-top: -30px;
+  padding: 0 30px;
+}
+
+.contact {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.contact h5 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact p {
+  font-size: 17px;
+}
+
+.skills {
+  margin-top: 20PX;
+}
+
+.skills h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.bars {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 0 20px;
+}
+
+.bars .bar p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bar span {
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: rgb(192, 191, 191);
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bar span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80%;
+  background-color: black;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.bar .progressBar1::before {
+  width: 75%;
+}
+
+.bar .progressBar2::before {
+  width: 75%;
+}
+
+.bar .progressBar3::before {
+  width: 30%;
+}
+
+.bar .progressBar4::before {
+  width: 20%;
+}
+
+.bar .progressBar5::before {
+  width: 80%;
+}
+
+.bar .progressBar6::before {
+  width: 80%;
+}
+
+.bar .progressBar7::before {
+  width: 70%;
+}
+
+.bar .progressBar8::before {
+  width: 80%;
+}
+
+.bar .progressBar9::before {
+  width: 25%;
+}
+
+.bar .progressBar10::before {
+  width: 25%;
+}
+
+.bar span:hover {
+  background-color: black;
+  transition: .5s;
+}
+
+.bar .progressBar1:hover::after {
+  position: absolute;
+  content: '75%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar2:hover::after {
+  position: absolute;
+  content: '75%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar3:hover::after {
+  position: absolute;
+  content: '30%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar4:hover::after {
+  position: absolute;
+  content: '20%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar5:hover::after {
+  position: absolute;
+  content: '80%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar6:hover::after {
+  position: absolute;
+  content: '80%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar7:hover::after {
+  position: absolute;
+  content: '70%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar8:hover::after {
+  position: absolute;
+  content: '80%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar9:hover::after {
+  position: absolute;
+  content: '25%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.bar .progressBar10:hover::after {
+  position: absolute;
+  content: '25%';
+  font-size: 10px;
+  margin: 0 auto;
+  color: rgb(230, 223, 223);
+}
+
+.follow h1 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.follow h4 {
+  font-size: 15px;
+  margin-top: 8px;
+  color: gray;
+}
+
+.follow p {
+  margin: 3px 0;
+}
+
+.right-area {
+  width: 70%;
+  padding: 50px;
+}
+
+.right-area h1 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.right-area h1 span {
+  margin-right: 30px;
+  font-size: 50px;
+  color: lightgray;
+}
+
+.right-area p {
+  padding-left: 70px;
+  text-align: justify;
+  word-break: break-word;
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5rem;
+  margin: 10px 0;
+}
+
+.work-group {
+  margin: 10px 0;
+}
+
+.work .work-group {
+  position: relative;
+}
+
+.work-group h3 {
+  font-size: 22px;
+  font-weight: normal;
+  padding-left: 70px;
+  margin-top: 20px;
+}
+
+.work-group h4 {
+  font-size: 18px;
+  padding-left: 70px;
+  margin-top: 6px;
+  font-weight: normal;
+  color: gray;
+}
+
+.work-group span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.education {
+  margin-top: 30px;
+}
+
+.edu-group {
+  position: relative;
+  margin: 10px 0;
+}
+
+.edu-group h4 {
+  width: 70%;
+  padding-left: 80px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.edu-group h4 .edu-group-remark {
+  font-size: 15px;
+  position: unset;
+  font-weight: normal;
+}
+
+.edu-group span {
+  width: 30%;
+  text-align: end;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.edu-group p {
+  padding-left: 80px;
+}
+
+
+.btn-print {
+  font-size: 25px;
+  padding: 10px 20px;
+  margin: 50px 0 50px 200px;
+  background-color: rgb(83, 83, 83);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn-print:hover {
+  background-color: black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-area * {
+    visibility: visible;
+  }
+
+  html {
+    zoom: 50%;
+  }
+}
