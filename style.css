@@ -5,6 +5,7 @@
   font-family: sans-serif;
 }
 
+
 .print-area {
   width: 80%;
   margin: 20px auto;
@@ -33,7 +34,25 @@
   font-size: 20px;
 }
 
+.header-text a {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  color: white;
+}
+
+.header-text a:hover {
+  cursor: pointer;
+  color: rgb(167, 219, 243);
+}
+
+.header-text a.active:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .header-text p {
+  margin-top: 10px;
   font-size: 24px;
   color: lightgray;
   text-align: center;
@@ -99,7 +118,7 @@
 
 .skills h1 {
   font-size: 30px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .bars {
@@ -262,20 +281,27 @@
   color: rgb(230, 223, 223);
 }
 
+.follow {
+  padding: 10px 20px;
+}
+
 .follow h1 {
   margin-top: 20px;
   font-size: 30px;
   font-weight: normal;
 }
 
-.follow h4 {
+.follow .followBox {
+  margin: 20px 0;
+}
+
+.follow .followBox h4 {
   font-size: 15px;
-  margin-top: 8px;
   color: gray;
 }
 
-.follow p {
-  margin: 3px 0;
+.follow .followBox p {
+  margin: 8px 0;
 }
 
 .right-area {
@@ -405,4 +431,406 @@
   html {
     zoom: 50%;
   }
+
+  .languageIcon {
+    display: none;
+  }
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width:600px) {
+  .print-area {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  .header-text h1 span {
+    font-size: 18px;
+  }
+
+  .header-text p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: lightgray;
+    text-align: center;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .left-area {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 20px 0 20px 0
+  }
+
+  .left-area img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 8px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+  }
+
+  .left-area .contact {
+    margin-top: 0px;
+    padding: 10px 30px;
+  }
+
+  .contact {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 20px 0;
+  }
+
+  .skills {
+    margin-top: 18PX;
+  }
+
+  .skills h1 {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .follow {
+    padding: 10px 10px;
+  }
+
+  .follow h1 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .right-area {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .right-area h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .right-area h1 span {
+    margin-right: 15px;
+    font-size: 18px;
+    color: lightgray;
+  }
+
+  .right-area p {
+    padding: 10px 15px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5rem;
+  }
+
+  .work svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .work-group h3 {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  .work-group h4 {
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-weight: normal;
+    color: gray;
+  }
+
+  .work-group span {
+    position: absolute;
+    right: 0;
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .education svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .edu-group h4 {
+    width: 100%;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .edu-group h4 .edu-group-remark {
+    font-size: 14px;
+    position: unset;
+    font-weight: normal;
+  }
+
+  .edu-group span {
+    width: 100%;
+    text-align: end;
+    top: 25px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .edu-group p {
+    padding-left: 15px;
+  }
+
+  .btn-print {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .print-area {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .header-text h1 {
+    font-size: 55px;
+    font-weight: normal;
+  }
+
+  .header-text h1 span {
+    font-size: 18px;
+  }
+
+  .header-text p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: lightgray;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left-area {
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .left-area img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 8px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+  }
+
+  .left-area .contact {
+    padding: 10px 15px;
+  }
+
+  .contact {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 auto;
+  }
+
+  .skills {
+    margin-top: 18PX;
+  }
+
+  .skills h1 {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .bars {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+  }
+
+  .bar span {
+    display: block;
+    width: 85%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    border-radius: 10px;
+    position: relative;
+    margin: 5px auto;
+  }
+
+  .follow {
+    padding: 10px 10px;
+  }
+
+  .follow h1 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .right-area {
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .about svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .right-area h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .right-area h1 span {
+    margin: 0 10px;
+    font-size: 18px;
+    color: lightgray;
+  }
+
+  .right-area p {
+    padding-left: 30px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5rem;
+  }
+
+  .work svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .work-group h3 {
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 30px;
+    margin-top: 20px;
+  }
+
+  .work-group h4 {
+    font-size: 14px;
+    padding-left: 30px;
+    margin-top: 10px;
+    font-weight: normal;
+    color: gray;
+  }
+
+  .work-group span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .education svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .edu-group h4 {
+    width: 100%;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .edu-group h4 .edu-group-remark {
+    font-size: 14px;
+    position: unset;
+    font-weight: normal;
+  }
+
+  .edu-group span {
+    width: 100%;
+    text-align: end;
+    top: 30px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .edu-group p {
+    padding-left: 30px;
+  }
+
+  .btn-print {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+  }
+
+
 }
