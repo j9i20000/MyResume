@@ -543,7 +543,8 @@
     color: lightgray;
   }
 
-  .right-area p {
+  .right-area p,
+  .right-area ul {
     padding: 10px 15px;
     text-align: justify;
     word-break: break-all;
