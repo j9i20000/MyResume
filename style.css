@@ -70,7 +70,7 @@
   padding-bottom: 20px;
 }
 
-.left-area img {
+.left-area .imgBox {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -84,9 +84,10 @@
   transition: .5s;
   user-select: none;
   filter: grayscale(100%);
+  background: url("./img/374754.jpg") scroll no-repeat center / cover;
 }
 
-.left-area img:hover {
+.left-area .imgBox:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
   box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
@@ -304,6 +305,30 @@
   margin: 8px 0;
 }
 
+.QRCode {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+.QRCode .QRCodeBox {}
+
+.QRCode .QRCodeBox h4 {
+  font-size: 15px;
+  color: gray;
+}
+
+.QRCode .QRCodeBox .QRCodeImages {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.QRCode .QRCodeBox .QRCodeImages img {
+  width: 100%;
+}
+
 .right-area {
   width: 70%;
   padding: 50px;
@@ -473,7 +498,7 @@
     padding: 20px 0 20px 0
   }
 
-  .left-area img {
+  .left-area .imgBox {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -488,6 +513,7 @@
     transition: .5s;
     user-select: none;
     filter: grayscale(100%);
+    background: url("./img/374754.jpg") scroll no-repeat center / cover;
   }
 
   .left-area .contact {
@@ -519,6 +545,29 @@
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;
+  }
+
+  .QRCode {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 10px;
+    padding: 10px 20px;
+    margin: 10px auto;
+  }
+
+  .QRCode .QRCodeBox {}
+
+  .QRCode .QRCodeBox h4 {
+    font-size: 15px;
+    color: gray;
+  }
+
+  .QRCode .QRCodeBox .QRCodeImages {
+    margin: 10px auto;
+  }
+
+  .QRCode .QRCodeBox .QRCodeImages img {
+    width: 100%;
   }
 
   .right-area {
@@ -663,7 +712,7 @@
     padding-bottom: 20px;
   }
 
-  .left-area img {
+  .left-area .imgBox {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -678,6 +727,7 @@
     transition: .5s;
     user-select: none;
     filter: grayscale(100%);
+    background: url("./img/374754.jpg") scroll no-repeat center / cover;
   }
 
   .left-area .contact {
@@ -726,6 +776,29 @@
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;
+  }
+
+  .QRCode {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 10px;
+    padding: 10px 20px;
+    margin: 10px auto;
+  }
+
+  .QRCode .QRCodeBox {}
+
+  .QRCode .QRCodeBox h4 {
+    font-size: 15px;
+    color: gray;
+  }
+
+  .QRCode .QRCodeBox .QRCodeImages {
+    margin: 10px auto;
+  }
+
+  .QRCode .QRCodeBox .QRCodeImages img {
+    width: 100%;
   }
 
   .right-area {
